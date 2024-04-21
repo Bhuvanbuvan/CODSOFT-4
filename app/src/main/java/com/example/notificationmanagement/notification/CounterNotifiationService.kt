@@ -1,12 +1,13 @@
-package com.example.notificationmanagement
+package com.example.notificationmanagement.notification
 
-import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
+import com.example.notificationmanagement.MainActivity
+import com.example.notificationmanagement.R
 
 class CounterNotifiationService(
     private val context: Context
@@ -15,7 +16,7 @@ class CounterNotifiationService(
     private var notificationManager=context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
     fun showNotification(counter :Int){
-        val activityIntent=Intent(context,MainActivity::class.java)
+        val activityIntent=Intent(context, MainActivity::class.java)
         val activityPendingIntent=PendingIntent.getActivity(
             context,
             1,
@@ -25,7 +26,7 @@ class CounterNotifiationService(
         val incrementIntent=PendingIntent.getBroadcast(
             context,
             2,
-            Intent(context,CounterNotificationRecever::class.java),
+            Intent(context, CounterNotificationRecever::class.java),
             if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.O) PendingIntent.FLAG_IMMUTABLE else 0
         )
 
