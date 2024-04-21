@@ -1,4 +1,4 @@
-package com.example.notificationmanagement
+package com.codesoft.notificationmanagement
 
 import org.junit.Test
 

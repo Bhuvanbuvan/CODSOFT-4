@@ -1,4 +1,4 @@
-package com.example.notificationmanagement.ui.theme
+package com.codesoft.notificationmanagement.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

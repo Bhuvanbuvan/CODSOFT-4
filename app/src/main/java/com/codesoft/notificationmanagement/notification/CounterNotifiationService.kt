@@ -1,4 +1,4 @@
-package com.example.notificationmanagement.notification
+package com.codesoft.notificationmanagement.notification
 
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -6,8 +6,8 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
-import com.example.notificationmanagement.MainActivity
-import com.example.notificationmanagement.R
+import com.codesoft.notificationmanagement.MainActivity
+import com.codesoft.notificationmanagement.R
 
 class CounterNotifiationService(
     private val context: Context

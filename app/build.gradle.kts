@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.notificationmanagement"
+    namespace = "com.codesoft.notificationmanagement"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.notificationmanagement"
+        applicationId = "com.codesoft.notificationmanagement"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

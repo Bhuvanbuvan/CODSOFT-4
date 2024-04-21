@@ -1,4 +1,4 @@
-package com.example.notificationmanagement
+package com.codesoft.notificationmanagement
 
 import android.content.Context
 import android.os.Bundle
@@ -12,7 +12,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -28,12 +27,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.notificationmanagement.datamodel.Counter
-import com.example.notificationmanagement.notification.CounterNotifiationService
-import com.example.notificationmanagement.ui.theme.NotificationManagementTheme
+import com.codesoft.notificationmanagement.datamodel.Counter
+import com.codesoft.notificationmanagement.notification.CounterNotifiationService
+import com.codesoft.notificationmanagement.ui.theme.NotificationManagementTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
